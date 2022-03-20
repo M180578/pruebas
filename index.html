@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scape=1">
+	<title>Document</title>
+	<style>
+
+		.contenedor{
+			width: 80%;
+			margin: 0 auto;
+			background: #ddd;
+		}
+		article{
+			width: 62.5%;
+			background: pink;
+			display:inline-block;
+			margin-right: -4px;
+		    vertical-align: top;
+		}
+		aside{
+			width:37.5%;
+			background: yellow;
+			display: inline-block;
+			margin-right: -4px;
+			vertical-align: top;
+		}
+		.image-responsive{
+			max-width: 100%;
+		/*con esta propiedad se hace la imagen fluida, lo mismo para una tabla u otro elemento
+		fluida significa que se podra achicar pero nunca agrandar a mas del tamaño en porcentaje marcado*/
+			
+		}
+@media screen and (max-width: 480px){
+		.contenedor{
+			width: 100%;
+			background: orange;
+		}
+		article, aside{
+			width:100%;
+		}
+}
+
+
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+	<img src="imagenes/ima.jpg" class="image-responsive" alt="">
+	<article>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</article>
+		<article>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</article>
+	<aside>
+		<h2>barra lateral</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</aside>
+</div>
+</body>
+</html>
